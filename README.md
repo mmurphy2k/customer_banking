@@ -31,7 +31,7 @@ The two ways you can run this program are
 
 This file contains the **"Account"** class definition. This class reguires two parameters to initialize, the balance for the account and the interest earned for the account.
 
-      Account(balance, 0)
+      my_account = Account(balance, 0)
 
 Within this class there are four methods defined:
 
@@ -42,13 +42,36 @@ Within this class there are four methods defined:
 
 ## 5. **cd_account.py**
 
-This file contins the **"create_cd_account()"** function definition for the CD Account. 
+This file contins the **"create_cd_account()"** function definition for the CD Account. This function requires three parameters, the balance for the account, the interest rate for the account, and the number of months until maturity.
+
+    """Creates a CD account, calculates interest earned, and updates the account balance.
+
+    Args:
+        balance (float): The initial CD account balance.
+        interest_rate (float): The APR interest rate for the CD account.
+        months (int): The length of months for the CD.
+
+    Returns:
+        float: The updated CD account balance after adding the interest earned.
+        And returns the interest earned.
+    """
 
 ## 6. **customer_banking.py**
 
+This file contains the **"main()"** function, the **"clear_screen()"** function, the **"validate_number()"** function, and the **"user_input"** function.
+
+1. **main()**
+
+    """This function prompts the user to enter the savings and cd account balance, interest rate,
+    and the length of months to determine the interest gained.
+    It displays the interest earned on the savings and CD accounts and updates the balances.
+    This function will call the other functions within this file to help with prompting users for the inputs,
+    and validating the information before passing it onto the external functions.
+    """
 
 ## 7. **README.md**
 
+This file. 
 
 ## 8. **savings_account.py**
 
