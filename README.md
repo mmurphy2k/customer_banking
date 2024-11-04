@@ -15,6 +15,7 @@
 
 This program is a customer banking system that allows users to calculate and track interest earned on savings and CD accounts. By running this application, users will be able to enter their savings and CD account information, see the interest earned, and view the updated balances after a specified number of months.
 
+
 ## 2. **File Structure**
 
 ![Screenshot of the GitHub repository for this application.](https://github.com/user-attachments/assets/cb7c562e-9204-4acb-99bd-10cb85865161)
@@ -26,6 +27,7 @@ The two ways you can run this program are
 
 1. Within VS Code, select the **"customer_banking.py"** file and select the **[Run Python File]** button in the top right side.
 2. From a terminal window, run the following command **"python customer_banking.py"**
+
 
 ## 4. **Account.py**
 
@@ -39,6 +41,7 @@ Within this class there are four methods defined:
 2. **"set_interest()"** method sets the interest earned for this account.
 3. **"get_balance()"** method returns the balance for this account
 4. **"get_interest()"** method returns the interest earned for this account. 
+
 
 ## 5. **cd_account.py**
 
@@ -56,28 +59,58 @@ This file contins the **"create_cd_account()"** function definition for the CD A
         And returns the interest earned.
     """
 
+
 ## 6. **customer_banking.py**
 
 This file contains the **"main()"** function, the **"clear_screen()"** function, the **"validate_number()"** function, and the **"user_input"** function.
 
 1. **main()**
 
-    """This function prompts the user to enter the savings and cd account balance, interest rate,
-    and the length of months to determine the interest gained.
-    It displays the interest earned on the savings and CD accounts and updates the balances.
-    This function will call the other functions within this file to help with prompting users for the inputs,
-    and validating the information before passing it onto the external functions.
-    """
+       """This function prompts the user to enter the savings and cd account balance, interest rate,
+       and the length of months to determine the interest gained.
+       It displays the interest earned on the savings and CD accounts and updates the balances.
+       This function will call the other functions within this file to help with prompting users for the inputs,
+       and validating the information before passing it onto the external functions.
+       """
+
+2. **clear_screen()**
+
+       """This function will clear the screen beofre prompting the users for inputs.
+       """
+
+3. **validate_number()**
+
+       """This function will validate the user input to be a valid number or not. It will retuen True or False. 
+       """
+
+4. **user_input()***
+
+       """This function will prompt the user for the balance, APR interest rate, and the number of months until maturity.
+       The function will return the balance, interest, and months to be used elsewhere in the program.
+       """
+
 
 ## 7. **README.md**
 
 This file. 
 
+
 ## 8. **savings_account.py**
 
+This file contins the **"create_savings_account()"** function definition for the Savings Account. This function requires three parameters, the balance for the account, the interest rate for the account, and the number of months until maturity.
 
+    """Creates a savings account, calculates interest earned, and updates the account balance.
 
+    Args:
+        balance (float): The initial savings account balance.
+        interest_rate (float): The APR interest rate for the savings account.
+        months (int): The length of months to determine the amount of interest.
 
+    Returns:
+        float: The updated savings account balance after adding the interest earned.
+        And returns the interest earned.
+    """
 
+---------------------------------------------
 
 Mark Murphy mmurphy2k@gmail.com
