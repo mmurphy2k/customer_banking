@@ -1,4 +1,4 @@
-# customer_banking
+# Customer Banking
 ## Module 3 Homework Assignment
 ### Table of Contents
 1. **Program Descriptions**
@@ -83,7 +83,7 @@ This file contains the **"main()"** function, the **"clear_screen()"** function,
        """This function will validate the user input to be a valid number or not. It will retuen True or False. 
        """
 
-4. **user_input()***
+4. **user_input()**
 
        """This function will prompt the user for the balance, APR interest rate, and the number of months until maturity.
        The function will return the balance, interest, and months to be used elsewhere in the program.
