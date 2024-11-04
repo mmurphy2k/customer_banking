@@ -17,7 +17,8 @@ This program is a customer banking system that allows users to calculate and tra
 
 ## 2. **File Structure**
 
-![Screenshot of the GitHub repository for this application.](Customer_banking GitHub Layout.png)
+![Screenshot of the GitHub repository for this application.](https://github.com/user-attachments/assets/cb7c562e-9204-4acb-99bd-10cb85865161)
+
 
 ## 3. **How to run the program**
 
