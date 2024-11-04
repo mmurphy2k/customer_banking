@@ -19,8 +19,42 @@ def validate_number(num):
         return False
 
 # Define user_imput function
-def user_imput():
-    return
+def user_input():
+    loop = True
+    while loop:
+        user_balance = input('What is your account balance? ')
+
+        if validate_number(user_balance):
+            user_balance = float(user_balance)
+            loop = False
+        else:
+            # sys.exit("This is not a valid deposit amount. Please try again.")
+            print("This is not a valid deposit amount. Please try again.")
+  
+    loop = True
+    while loop:
+        user_interest = input('What is the APR for the account? ')
+
+        if validate_number(user_interest):
+            user_interest = float(user_interest)
+            loop = False
+        else:
+            # sys.exit("This is not a valid APR. Please try again.")
+            print("This is not a valid APR. Please try again.")
+
+    loop = True
+    while loop:
+        user_months = input('How many months until maturity? ')
+
+        if validate_number(user_months):
+            user_months = int(user_months)
+            loop = False
+        else:
+            # sys.exit("This is not a valid number. Please try again.")
+            print("This is not a valid number. Please try again.")
+
+    return user_balance, user_interest, user_months
+
 
 # Define the main function
 def main():
@@ -30,10 +64,11 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
-    
-    savings_balance = float(input('What is your savings account balance? '))
-    savings_interest = float(input('What is the APR for the savings account? '))
-    savings_maturity = int(input('How many months till maturity? '))
+    print("Please enter the following information for your Savings Account:")
+    savings_balance, savings_interest, savings_maturity = user_input()
+    # savings_balance = float(input('What is your savings account balance? '))
+    # savings_interest = float(input('What is the APR for the savings account? '))
+    # savings_maturity = int(input('How many months till maturity? '))
 
     # Call the create_savings_account function and pass the variables from the user.
     #savings_account = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -51,9 +86,11 @@ def main():
     
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
-    cd_balance = float(input('What is your CD account balance? '))
-    cd_interest = float(input('What is the APR for the CD account? '))
-    cd_maturity = int(input('How many months till maturity? '))
+    print("\nPlease enter the following information for your CD Account:")
+    cd_balance, cd_interest, cd_maturity = user_input()
+    # cd_balance = float(input('What is your CD account balance? '))
+    # cd_interest = float(input('What is the APR for the CD account? '))
+    # cd_maturity = int(input('How many months till maturity? '))
 
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, cd_interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
