@@ -24,8 +24,8 @@ This program is a customer banking system that allows users to calculate and tra
 
 The two ways you can run this program are
 
-1. Within VS Code, select the ***<ins>customer_banking.py</ins>*** file and select the ***[Run Python File]*** button in the top right side.
-2. From a terminal window, run the follwoing command ***python customer_banking.py***
+1. Within VS Code, select the **<ins>customer_banking.py</ins>** file and select the **[Run Python File]** button in the top right side.
+2. From a terminal window, run the follwoing command **(dev)$ python customer_banking.py**
 
 ## 4. **Account.py**
 
