@@ -29,14 +29,20 @@ The two ways you can run this program are
 
 ## 4. **Account.py**
 
-This file contains the ***"Account"*** class definition. Within this class there are four methods defined:
-1. set_balance() method sets the balance for this account.
-2. set_interest() method sets the interest earned for this account.
-3. get_balance() method returns the balance for this account
-4. get_interest() method returns the interest earned for this account. 
+This file contains the **"Account"** class definition. This class reguires two parameters to initialize, the balance for the account and the interest earned for the account.
+
+      Account(balance, 0)
+
+Within this class there are four methods defined:
+
+1. **"set_balance()"** method sets the balance for this account.
+2. **"set_interest()"** method sets the interest earned for this account.
+3. **"get_balance()"** method returns the balance for this account
+4. **"get_interest()"** method returns the interest earned for this account. 
 
 ## 5. **cd_account.py**
 
+This file contins the **"create_cd_account()"** function definition for the CD Account. 
 
 ## 6. **customer_banking.py**
 
