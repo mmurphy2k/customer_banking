@@ -75,7 +75,7 @@ This file contains the **"main()"** function, the **"clear_screen()"** function,
 
 2. **clear_screen()**
 
-       """This function will clear the screen beofre prompting the users for inputs.
+       """This function will clear the screen before prompting the users for inputs.
        """
 
 3. **validate_number()**
@@ -85,8 +85,9 @@ This file contains the **"main()"** function, the **"clear_screen()"** function,
 
 4. **user_input()**
 
-       """This function will prompt the user for the balance, APR interest rate, and the number of months until maturity.
-       The function will return the balance, interest, and months to be used elsewhere in the program.
+       """This function will prompt the user for the balance, APR interest rate, and the number of months
+       until maturity. The function will return the balance, interest, and months to be used elsewhere
+       in the program.
        """
 
 
